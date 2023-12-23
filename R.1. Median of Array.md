@@ -13,6 +13,15 @@ even: 偶数
 # odd length [1,4,2]: 2
 # even length [1,4,2,3]: (2+3)/2 = 2.5
 
+# pyton 3 / 2: 1.5
+# pyton 3 // 2: 1
+# Java 3 / 2: 1
+# Java (double)  3 / 2: 1.5
+
+# Python sorted_list = sorted(integer_list)
+# Java int[] sortedList = Arrays.copyOf(integerList, n);
+# Java Arrays.sort(sortedList);
+
 class Solution:
     def median(self, integer_list):
         n = len(integer_list)
@@ -61,19 +70,17 @@ public class Solution {
         if (n % 2 == 1) {
             return sortedList[n / 2];
         } else {
-            int mid1 = sortedList[n / 2 - 1];
-            int mid2 = sortedList[n / 2];
-            return (double) (mid1 + mid2) / 2;
+            return (double) (sortedList[n / 2 - 1] + sortedList[n / 2]) / 2;
         }
     }
 
     public static void main(String[] args) {
         Solution sol = new Solution();
 
-        int[] nums1 = { 1, 4, 2 };
-        int[] nums2 = { 1, 4, 2, 3 };
+        int[] nums1 = {1, 4, 2};
+        int[] nums2 = {1, 4, 2, 3};
         int[] nums3 = {};
-        int[] nums4 = { 0 };
+        int[] nums4 = {0};
 
         System.out.println(Arrays.toString(nums1));
         System.out.println(sol.median(nums1));
