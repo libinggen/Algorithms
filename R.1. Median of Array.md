@@ -22,6 +22,10 @@ even: 偶数
 # Java int[] sortedList = Arrays.copyOf(integerList, n);
 # Java Arrays.sort(sortedList);
 
+# implementation
+
+python:
+
 class Solution:
     def median(self, integer_list):
         n = len(integer_list)
