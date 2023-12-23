@@ -4,10 +4,14 @@ R.1. Median of Array | Easy
 To find the median of a list of integers, sort the list and find the middle element (or the average of the two middle elements for lists with an even length)
 
 median: 中位数
+determine: 确定
+odd: 奇数
+even: 偶数
 
 # approach
-# [1,4,2]:2
-# [1,4,2,3]: (2+3)/2 = 2.5
+# determine whether even: n%2 == 1
+# odd length [1,4,2]: 2
+# even length [1,4,2,3]: (2+3)/2 = 2.5
 
 class Solution:
     def median(self, integer_list):
